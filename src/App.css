@@ -1,3 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;700&display=swap') ;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  background-image: url('/src/images/background.png');
+  color: white;
+  font-family: Epilogue , sans-serif;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.header {
+  background-image: url('/src/images/logo-sistema-solar.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px;
+}
+
+.Title {
+  font-weight: 300;
+  line-height: 60px;
+  size: 40px;
+}
+
+.solarContent {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.solarContent > .planet-card:nth-child( 1 ) > img {
+  height: 31px;
+  width: 41px;
+}
+
+.solarContent > .planet-card:nth-child( 2 ) > img {
+  height: 76px;
+  width: 102px;
+}
+
+.solarContent > .planet-card:nth-child( 3 ) > img {
+  height: 79px;
+  width: 106px;
+}
+
+.solarContent > .planet-card:nth-child( 4 ) > img {
+  height: 50px;
+  width: 66px;
+}
+
+.solarContent > .planet-card:nth-child( 5 ) > img {
+  height: 204px;
+  width: 272px;
+}
+
+.solarContent > .planet-card:nth-child( 6 ) > img {
+  height: 210px;
+  width: 282px;
+}
+
+.solarContent > .planet-card:nth-child( 7 ) > img {
+  height: 109px;
+  width : 144px;
+}
+
+.solarContent > .planet-card:nth-child( 8 ) > img {
+  height : 107px;
+  width : 144px;
+}
+
+
+hr {
+  position: relative;
+  text-align: center;
+  top: -125px;
+}
+
+.missions {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 30px;
+  width: 1000px;
+}
+
+.mission-card {
+  background-color: rgba(24, 26, 37, 0.5);
+  border: 2px solid white;
+  border-radius: 17px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: start;
+  width: 400px;
+}
+
+.missionTitle {
+  font-size: 22px;
+  padding: 27px;
+}
+
+
+.missionContent {
+  border-top: 2px solid white;
+  display: flex;
+  font-size: 14px;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 8px 16px;
 }
